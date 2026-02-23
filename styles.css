@@ -13,12 +13,12 @@ body {
     height: 100vh;
     background: 
         linear-gradient(to right, #146c70 0%, rgba(20,108, 12, 0) 70%), 
-        url("./satento.jpg");
+        url("./images/satento.jpg");
     /* background-image: url("./satento.jpg"); */
     background-size: cover;
     /* background-position: center; */
     background-repeat: no-repeat;
-    /* position: relative; */
+    background-attachment: fixed;
     color: white;
 }
 
@@ -31,6 +31,7 @@ nav {
     align-items: center;
     padding: 12px 40px;
     background: linear-gradient(90deg, #0f3d3e, #2c6e6f);
+    z-index: 1;
 }
 
 
@@ -148,7 +149,7 @@ nav {
 }
 
 main {
-    /* border: 2px fuchsia solid; */
+    /* border: 100px fuchsia solid; */
     /* height: 100vh; */
     /* Imagen + Degradado */
     /* background:  */
@@ -176,6 +177,7 @@ main {
 
 .intro {
     /* border: 1px solid white; */
+    position: fixed;
     float: left;
     margin: 15% 15%;
     max-width: 500px;
@@ -218,10 +220,12 @@ main {
 
 .post-results {
     /* border: 1px solid black; */
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
     max-width: 600px;
     right: 5%;
     margin-top: 100px; /* Esto se pone ya que se quito el separador */
+    /* overflow-y: auto; */
 }
 
 /* .post-separator {
@@ -318,9 +322,9 @@ main {
 .about-us {
     /* border: 2px black solid; */
     font-size: 50px;
-    margin: 5% 150px;
-    /* margin: 5% 15%; */
-    text-transform: uppercase;
+    padding-top: 150px;
+    padding-left: 160px;
+    /* text-transform: uppercase; */
 }
 
 .text-section {
@@ -348,7 +352,7 @@ main {
 .icon {
   width: 50px;              /* puedes ajustar tamaño */
   height: 50px;
-  background-image: url("social_media.png");
+  background-image: url("./icons/social_media.png");
   background-size: 300% 300%; /* importante */
   background-repeat: no-repeat;
 }
@@ -474,8 +478,8 @@ figure {
     /* border: 1px solid fuchsia; */
     float: left;
     width: 50%;
-    height: 92vh; /* Este es el 100% en alturna. No estoy muy seguro por qué*/
-    margin-top: 0;
+    height: 100vh; /* Este es el 100% en alturna. No estoy muy seguro por qué*/
+    /* margin-top: 0; */
     align-content: center;
     /* align-items: center; */
     padding: 50px;
@@ -487,14 +491,15 @@ figure {
     font-size: 70px;
     text-transform: uppercase;
     padding-bottom: 30px;
+    padding-left: 100px;
     /* margin-botton: 30px; */
 }
 
 .contact-subtitle {
     /* border: 1px solid white; */
+    padding-left: 100px;
     font-size: larger;
     font-weight: lighter;
-
     /* height: 50vh; */
 }
 

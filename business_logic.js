@@ -13,7 +13,7 @@ const place_types = [['countries','country'],
 // const destination_data = null;
 
 
-
+search_btn.addEventListener("keypress", searchDestination(event));
 search_btn.addEventListener('click', searchDestination);
 clear_btn.addEventListener('click', clearInput);
 // book_btn.addEventListener('click', bookReservation);
